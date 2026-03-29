@@ -1,10 +1,8 @@
 # isi README
 
-This is the README for your extension "isi". After writing up a brief description, we recommend including the following sections.
+ISI (Interscript Interpreted) is an interpreted programming language currently developed by me.
 
 ## Features
-
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
 Basic syntax:
 
