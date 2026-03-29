@@ -20,7 +20,7 @@
         "keywords": {
             "patterns": [{
                 "name": "keyword.control.isi",
-                "match": "\\b(if|while|endl)\\b"
+                "match": "\\b(if|while|endl|return)\\b"
             }]
         },
         "strings": {
