@@ -1,0 +1,75 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Interscript Interpreted",
+	"patterns": [
+        { "include": "#comments" },
+        { "include": "#strings" },
+        { "include": "#keywords" },
+        { "include": "#storage" },
+        { "include": "#support" },
+        { "include": "#numbers" },
+		{ "include": "#operators"}
+    ],
+	"repository": {
+		"comments": {
+            "patterns": [{
+                "name": "comment.line.double-slash.isi",
+                "match": "//.*$"
+            }]
+        },
+        "keywords": {
+            "patterns": [{
+                "name": "keyword.control.isi",
+                "match": "\\b(if|while)\\b"
+            }]
+        },
+        "strings": {
+            "name": "string.quoted.double.isi",
+            "begin": "\"",
+            "end": "\"",
+            "patterns": [{
+                "name": "constant.character.escape.isi",
+                "match": "\\\\."
+            }]
+        },
+        "storage": {
+            "patterns": [{
+                "name": "storage.type.isi",
+                "match": "\\b(string|int|float|bool)\\b"
+            }]
+        },
+        "support": {
+            "patterns": [{
+                "name": "support.function.isi",
+                "match": "\\b(input|cout)(?=\\s*\\()"
+            }]
+        },
+        "numbers": {
+            "patterns": [{
+                "name": "constant.numeric.isi",
+                "match": "\\b\\d+(\\.\\d+)?\\b"
+            }]
+        },
+		"operators": {
+    		"patterns": [
+    		    {
+    		        "name": "keyword.operator.comparison.isi",
+    		        "match": "==|!=|<=|>=|<|>"
+    		    },
+    		    {
+    		        "name": "keyword.operator.assignment.isi",
+    		        "match": "="
+    		    },
+    		    {
+    		        "name": "keyword.operator.arithmetic.isi",
+    		        "match": "\\+|\\-|\\*|/|%"
+    		    },
+    		    {
+    		        "name": "keyword.operator.logical.isi",
+    		        "match": "\\b(and|or|not)\\b"
+    		    }
+    		]
+		}
+	},
+	"scopeName": "source.isi"
+}
