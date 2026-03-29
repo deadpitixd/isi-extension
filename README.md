@@ -8,7 +8,7 @@ Describe specific features of your extension including screenshots of your exten
 
 Basic syntax:
 
-<img src="./images/feature-x.png" alt="Basic Syntax" width="75%">
+<img src="https://raw.githubusercontent.com/deadpitixd/isi-extension/main/images/feature-x.png" alt="Basic Syntax" width="75%">
 
 
 ## Known Issues
