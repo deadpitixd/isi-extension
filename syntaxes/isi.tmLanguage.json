@@ -35,7 +35,7 @@
         "storage": {
             "patterns": [{
                 "name": "storage.type.isi",
-                "match": "\\b(string|int|float|bool)\\b"
+                "match": "\\b(string|int|float|double|bool)\\b"
             }]
         },
         "support": {
